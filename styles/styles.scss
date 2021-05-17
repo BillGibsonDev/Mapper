@@ -1,0 +1,51 @@
+//
+// import files
+//
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,700&display=swap');
+@import 'index';
+@import 'mapper';
+@import 'about';
+@import 'contact';
+@import 'footer';
+//
+//
+// some colors
+//
+$primary: rgba(62,
+74,
+97,
+0.9);
+$secondary: #0b8457;
+$dark: #1a2639;
+$font: #dae1e7;
+//
+//
+//font sizes
+//
+$title: 4em;
+$subtitle: 3em;
+$para: 2em;
+//
+//
+// global styles
+//
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 90%;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}

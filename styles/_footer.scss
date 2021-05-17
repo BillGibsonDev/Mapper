@@ -1,0 +1,48 @@
+footer {
+    height: 30vh;
+    display: block;
+    border-radius: 20px;
+    background: $primary;
+    margin-top: 2%;
+    width: 100%;
+    #footerNav {
+        display: flex;
+        justify-content: space-around;
+        margin: 2em auto;
+        padding-top: 2em;
+    }
+    .footerList {
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+    }
+    ul li a {
+        margin: 1em;
+        color: $font;
+        font-weight: 700;
+        font-size: 1.5em;
+        &:hover,
+        &:focus {
+            color: $secondary;
+            text-decoration: underline;
+            text-underline-position: under;
+        }
+    }
+    .iconContainer {
+        margin: 4em auto 5em auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 50%;
+    }
+    .iconWrapper {
+        width: 30%;
+        display: flex;
+        justify-content: space-around;
+    }
+    i {
+        font-size: 3em;
+        color: $secondary;
+    }
+}
