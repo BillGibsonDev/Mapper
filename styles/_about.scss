@@ -44,15 +44,20 @@
         color: $font;
         font-size: $para;
     }
-    .workArticle a {
+    .workArticle a,
+    .helpArticle a {
         margin: 0 6px;
         color: $secondary;
         font-weight: 700;
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+            text-underline-position: under;
+            color: $font;
+        }
     }
     .helpArticle a {
-        margin: 0 6px;
         color: $dark;
-        font-weight: 700;
     }
     .articleWrapper {
         display: flex;
