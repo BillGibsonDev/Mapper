@@ -10,17 +10,17 @@ $font: #dae1e7;
 //
 $title: 4em;
 $subtitle: 3em;
-$para: 2em;
+$para: 1.5em;
 //
 //
 #home {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     border-radius: 20px;
-    background: $primary;
+    background: rgba(62, 74, 97, 0.89);
     margin-top: 2%;
     nav {
         display: flex;
@@ -54,8 +54,21 @@ $para: 2em;
             text-underline-position: under;
         }
     }
+    h1 {
+        font-size: $para;
+        padding: 1em;
+        width: 70%;
+        color: $dark;
+        font-weight: 700;
+        text-align: center;
+        text-shadow: $secondary 1px 1px;
+    }
+    #underline {
+        text-underline-position: under;
+        font-weight: 700;
+    }
     .homeContainer {
-        display: flex;
+        display: block;
         align-items: center;
         height: 100%;
         justify-content: center;
@@ -65,7 +78,8 @@ $para: 2em;
         border-radius: 20px;
         box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.322);
     }
-    .homeBtn {
+    .homeBtn,
+    #navBtn {
         background: $secondary;
         font-size: $para;
         padding: .5em 1em;
@@ -73,15 +87,14 @@ $para: 2em;
         margin: 1em;
         color: $font;
         font-weight: 700;
-        border: 2px solid $primary;
+        border: 2px solid $secondary;
         transition: ease .8s;
         &:hover,
         &:focus {
             color: $secondary;
             background: $dark;
-            text-decoration: underline;
-            text-underline-position: under;
             border: 2px solid white;
+            text-decoration: none;
         }
     }
     @keyframes button {
@@ -113,6 +126,7 @@ $para: 2em;
     /* Slideshow container */
     .slideshow {
         max-width: 100%;
+        height: 100%;
         position: relative;
         margin: auto;
     }

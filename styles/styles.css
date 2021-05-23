@@ -10,10 +10,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   border-radius: 20px;
-  background: #3e4a61;
+  background: rgba(62, 74, 97, 0.89);
   margin-top: 2%;
   /* Slideshow container */
   /* Next & previous buttons */
@@ -58,7 +58,7 @@
   margin: 1em;
   color: #dae1e7;
   font-weight: 700;
-  font-size: 2em;
+  font-size: 1.5em;
   -webkit-transition: ease .6s;
   transition: ease .6s;
 }
@@ -69,10 +69,23 @@
   text-underline-position: under;
 }
 
+#home h1 {
+  font-size: 1.5em;
+  padding: 1em;
+  width: 70%;
+  color: #1a2639;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: #0b8457 1px 1px;
+}
+
+#home #underline {
+  text-underline-position: under;
+  font-weight: 700;
+}
+
 #home .homeContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -88,25 +101,27 @@
           box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.322);
 }
 
-#home .homeBtn {
+#home .homeBtn,
+#home #navBtn {
   background: #0b8457;
-  font-size: 2em;
+  font-size: 1.5em;
   padding: .5em 1em;
   border-radius: 20px;
   margin: 1em;
   color: #dae1e7;
   font-weight: 700;
-  border: 2px solid #3e4a61;
+  border: 2px solid #0b8457;
   -webkit-transition: ease .8s;
   transition: ease .8s;
 }
 
-#home .homeBtn:hover, #home .homeBtn:focus {
+#home .homeBtn:hover, #home .homeBtn:focus,
+#home #navBtn:hover,
+#home #navBtn:focus {
   color: #0b8457;
   background: #1a2639;
-  text-decoration: underline;
-  text-underline-position: under;
   border: 2px solid white;
+  text-decoration: none;
 }
 
 @-webkit-keyframes button {
@@ -165,6 +180,7 @@
 
 #home .slideshow {
   max-width: 100%;
+  height: 100%;
   position: relative;
   margin: auto;
 }
@@ -323,7 +339,7 @@
 
 #about p {
   color: #dae1e7;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 #about .workArticle a,
@@ -406,6 +422,26 @@ footer ul li a:hover, footer ul li a:focus {
   color: #0b8457;
   text-decoration: underline;
   text-underline-position: under;
+}
+
+footer #navBtn {
+  background: #0b8457;
+  font-size: 1.5em;
+  padding: .5em 1em;
+  border-radius: 20px;
+  margin: 1em;
+  color: #dae1e7;
+  font-weight: 700;
+  border: 2px solid #0b8457;
+  -webkit-transition: ease .8s;
+  transition: ease .8s;
+}
+
+footer #navBtn:hover, footer #navBtn:focus {
+  color: #0b8457;
+  background: #1a2639;
+  border: 2px solid white;
+  text-decoration: none;
 }
 
 footer .iconContainer {
